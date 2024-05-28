@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="task">
+        <div class="input">
+            <div class="calculator"><img id="pic"></div>
+            <div class="calculator">
+            <select id="seee">
+                <option>Сторона, высота и меньший угол</option>
+                <option>Две стороны и меньший угол</option>
+            </select>
+
+            <input type="button" value="Показать" onClick="selllect()">
+            </div>
+
+            <div id="inputFields"></div>
+
+            <form>
+                <div class="calculator">
+                    <p>
+                        Найти: <br>
+                        <label><input type="checkbox" id="task1"> площадь</label><br>
+                        <label><input type="checkbox" id="task2"> периметр</label><br>
+                        <label><input type="checkbox" id="task3"> диагонали</label><br>
+                        <label><input type="checkbox" id="task4"> угол между диагоналями</label>
+                    </p>
+                    <p>
+                        <input type="button" value="Вычислить" onClick="calc()">
+                        <input type="reset" value="Очистить">
+                    </p>
+                    <div id="resultt">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="output">
+        </div>
+    </div>
+</body>
+<script src="program.js"> </script>
+
+</html>
